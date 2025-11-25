@@ -13,7 +13,7 @@ source ~/miniconda3/etc/profile.d/conda.sh
 ```
 ``` bash
  # Setting the Environment
-conda create --name <env> --file <this file>
+conda create --name psiresp --file psiresp.txt
 conda activate psiresp
 ```
 - Since we work with wsl, let's install a browser and jupyter for convenience
