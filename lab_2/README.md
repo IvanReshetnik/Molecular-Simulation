@@ -11,7 +11,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 source ~/miniconda3/etc/profile.d/conda.sh 
 ```
-```
+``` bash
  # Setting the Environment
 conda create --name <env> --file <this file>
 conda activate psiresp
@@ -21,7 +21,5 @@ conda activate psiresp
 sudo apt-get install firefox
 pip install jupyterlab
 python -m ipykernel install --user --name psiresp
-```
-```
 jupyter-lab
 ```
