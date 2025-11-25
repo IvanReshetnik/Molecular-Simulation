@@ -1,24 +1,27 @@
-# Вычисление параметров молекулярной механики
-> Для расчетов будем использовать Psi4
+# Molecular Mechanics Computation
+> For calculations, we will use Psi4
 
-## Установка conda и среды
-- Нажмите правую кнопку мыши и Open in terminal, после чего в командной строке введите wsl
+## Installing the conda and environment
+- Right-click and Open in terminal, then at the Command prompt type wsl
 
 ``` bash
-# Установка anaconda
+# Anaconda Installation
 cd ~
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh
 source ~/miniconda3/etc/profile.d/conda.sh 
 ```
 ```
- # Установка среды
+ # Setting the Environment
 conda create --name <env> --file <this file>
 conda activate psiresp
 ```
-- Поскольку работаем с wsl установим браузер и jupyter для удобства
+- Since we work with wsl, let's install a browser and jupyter for convenience
 ``` bash
 sudo apt-get install firefox
 pip install jupyterlab
 python -m ipykernel install --user --name psiresp
+```
+```
+jupyter-lab
 ```
